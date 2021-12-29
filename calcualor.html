@@ -1,0 +1,182 @@
+<html>
+    <head>
+        <title>
+
+        </title>
+
+        <link rel="stylesheet" href="calculator.css">
+        <link rel="stylesheet" href="bootstrap.min.css">
+    </head>
+    <body>
+        <div class = "container project">
+            <div class = "row">
+                <div class = "col-sm-3 col-sm-3 col-sm-3 image ">
+                    <img id="image1"class = "imageOne"src="image.png" alt="">
+                </div>
+                <div class = "col-sm-6 col-sm-6 col-sm-6">
+                    <div class="text-center inner">
+                        <div class = "row">
+                            <div class = "col-md-12 col-sm-12 col-lg-12">
+                                <p  id = "responsiveCalculator">Responsive Calculator</p>
+                                <textarea class = "rounded textArea mb-3 " name="" id="" cols=58" rows=""></textarea><br>
+                            </div>
+                        </div>
+                        <!-- first row of calculator -->
+                        <div class = "row first mt-2">
+                            <div class = "col-md-6 col-sm-6 col-lg-6">
+                                <button class = "btn btn-danger clear" id = "AC">AC</button>
+                            </div>
+                            <div class = "col-md-3 col-sm-3 col-lg-3">
+                                <button class = "btn btn-info calc-btn" id = "divide">/</button>
+                            </div>
+                            <div class = "col-md-3 col-sm-3 col-lg-3">
+                                <button class = "btn btn-info calc-btn" id = "percent">%</button>
+                            </div>
+                            
+                        </div>
+                        <!-- Second row of calculator -->
+                        <div class = "row second mt-2">
+                            <div class = "col-md-3 col-sm-3 col-lg-3">
+                                <button class = "btn btn-warning calc-btn" id = "seven">7</button>
+                            </div>
+                            <div class = "col-md-3 col-sm-3 col-lg-3">
+                                <button class = "btn btn-warning calc-btn" id = "eight">8</button>
+                            </div>
+                            <div class = "col-md-3 col-sm-3 col-lg-3">
+                                <button class = "btn btn-warning calc-btn" id = "nine">9</button>
+                            </div>
+                            <div class = "col-md-3 col-sm-3 col-lg-3">
+                                <button class = "btn btn-info calc-btn"id = "multiply">*</button><br>
+                            </div>
+                        </div>
+                        <!-- Third row of calculator -->
+                        <div class = "row third mt-2">
+                            <div class = "col-md-3 col-sm-3 col-lg-3">
+                                <button class = "btn btn-warning calc-btn" id = "four">4</button>
+                            </div>
+                            <div class = "col-md-3 col-sm-3 col-lg-3">
+                                <button class = "btn btn-warning calc-btn" id = "five">5</button>
+                            </div>
+                            <div class = "col-md-3 col-sm-3 col-lg-3">
+                                <button class = "btn btn-warning calc-btn" id = "six">6</button>
+                            </div>
+                            <div class = "col-md-3 col-sm-3 col-lg-3">
+                                <button class = "btn btn-info calc-btn" id = "minus">-</button><br>
+                            </div>
+                        </div>
+                        <!-- fourth row of calculator -->
+                        <div class = "row fourth mt-2">
+                            <div class = "col-md-3 col-sm-3 col-lg-3">
+                                <button class = "btn btn-warning calc-btn" id = "one">1</button>
+                            </div>
+                            <div class = "col-md-3 col-sm-3 col-lg-3">
+                                <button class = "btn btn-warning calc-btn" id = "two">2</button>
+                            </div>
+                            <div class = "col-md-3 col-sm-3 col-lg-3">
+                                <button class = "btn btn-warning calc-btn" id = "three">3</button>
+                            </div>
+                            <div class = "col-md-3 col-sm-3 col-lg-3">
+                                <button class = "btn btn-info calc-btn" id = "plus">+</button><br>
+                            </div>
+                        </div>
+                        <!-- fifth row of calculator -->
+                        <div class = "row fifth mt-2 mb-4">
+                            <div class = "col-md-6 col-sm-6 col-lg-6">
+                                <button class = "btn btn-warning calc-btn" id = "zero">0</button>
+                            </div>
+                            <div class = "col-md-3 col-sm-3 col-lg-3">
+                                <button class = "btn btn-warning calc-btn" id = "dot">.</button>
+                            </div>
+                            <div class = "col-md-3 col-sm-3 col-lg-3">
+                                <button class = "btn btn-danger" id = "equal">=</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class = "  col-sm-3 col-sm-3 col-sm-3 ">
+                    <p id = "invalid"></p>
+                </div>
+            </div>
+            </div>
+        </div>
+
+        
+
+
+
+                
+           
+
+        <!-- <div class = "firstRow">
+            <button class = "btn btn-secondary" id = "AC">AC</button>
+            <button class = "btn btn-secondary" id = "/">/</button>
+            <button class = "btn btn-secondary" id = "%">%</button>
+            <button class = "btn btn-secondary" id = "+-">+-</button><br>
+            </div>
+
+            <div class = "secondRow" >
+            <button class = "btn btn-secondary" id = "7">7</button>
+            <button class = "btn btn-secondary" id = "8">8</button>
+            <button class = "btn btn-secondary" id = "9">9</button>
+            <button class = "btn btn-secondary"id = "x">x</button><br>
+            </div>
+
+            <div class= "thirdRow">
+            <button class = "btn btn-secondary" id = "4">4</button>
+            <button class = "btn btn-secondary" id = "5">5</button>
+            <button class = "btn btn-secondary" id = "6">6</button>
+            <button class = "btn btn-secondary" id = "-">-</button><br>
+            </div>  
+
+            <div class = "fourthRow" >
+            <button class = "btn btn-secondary" id = "1">1</button>
+            <button class = "btn btn-secondary" id = "2">2</button>
+            <button class = "btn btn-secondary" id = "3">3</button>
+            <button class = "btn btn-secondary" id = "+">+</button><br>
+            </div>
+
+            <div class = "fifthRow">
+            <button class = "btn btn-secondary" id = "0">0</button>
+            <button class = "btn btn-secondary" id = ".">.</button>
+            <button class = "btn btn-secondary" id = "=">=</button>
+            </div>
+ -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+         
+
+
+
+
+     
+
+
+
+
+
+    </body>
+
+
+
+    <script src = "jQuery.min.js"></script>
+    <script src = "calculator.js"></script>
+</html>
+
+
